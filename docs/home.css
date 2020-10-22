@@ -22,7 +22,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  padding: 12%
+  padding: 12%;
+  padding-bottom: 0;
 }
 
   .header {
@@ -36,11 +37,73 @@ body {
 
   .page_det {
     position: absolute;
-    top: 4.5%;
+    top: 5.5%;
     right: 0;
     text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     color: black;
     font-size: 2em;
   }
+
+
+  .bio {
+    position: absolute;
+    display: inline-block;
+    top: 98%;
+    margin-left: 26%;
+    width: 23%;
+    padding: 0%;
+    padding-top: 5%;
+}
+
+.bio:hover {
+  position: absolute;
+  display: inline-block;
+  top: 100%;
+  margin-left: 25%;
+  width: 25%;
+  padding: 0%;
+  padding-top: 4%;
+}
+
+
+.work {
+  position: absolute;
+  display: inline-block;
+  top: 95%;
+  margin-left: 50%;
+  width: 27%;
+  padding: 0%;
+  padding-top: 5%;
+}
+
+.work:hover {
+position: absolute;
+display: inline-block;
+top: 97%;
+margin-left: 49%;
+width: 29%;
+padding: 0%;
+padding-top: 4%;
+}
+
+.portp {
+  position: absolute;
+  display: inline-block;
+  top:135%;
+  margin-left: 24%;
+  width: 29%;
+  padding: 0%;
+  padding-top: 5%;
+}
+
+.portp:hover {
+position: absolute;
+display: inline-block;
+top: 137%;
+margin-left: 23%;
+width: 31%;
+padding: 0%;
+padding-top: 4%;
+}
