@@ -32,78 +32,72 @@ body {
     left: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
-    font-size: 5em;
+    font-size: 6vw;
   }
 
   .page_det {
     position: absolute;
-    top: 5.5%;
+    top: 3.5vh;
     right: 0;
     text-align: right;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 2em;
+    font-size: 3vw;
   }
 
 
   .bio {
     position: absolute;
     display: inline-block;
-    top: 98%;
-    margin-left: 26%;
-    width: 23%;
-    padding: 0%;
-    padding-top: 5%;
+    top: 88vh;
+    margin-left: 26vw;
+    width: 23vw;
+    padding: 1vw;
 }
 
 .bio:hover {
   position: absolute;
   display: inline-block;
-  top: 100%;
-  margin-left: 25%;
-  width: 25%;
-  padding: 0%;
-  padding-top: 4%;
+  top: 88vh;
+  margin-left: 25vw;
+  width: 25vw;
+  padding: 1vw;
 }
 
 
 .work {
   position: absolute;
   display: inline-block;
-  top: 95%;
-  margin-left: 50%;
-  width: 27%;
-  padding: 0%;
-  padding-top: 5%;
+  top: 85vh;
+  margin-left: 50vw;
+  width: 27vw;
+  padding: 1vw;
 }
 
 .work:hover {
 position: absolute;
 display: inline-block;
-top: 97%;
-margin-left: 49%;
-width: 29%;
-padding: 0%;
-padding-top: 4%;
+top: 85vh;
+margin-left: 49vw;
+width: 29vw;
+padding: 1vw;
 }
 
 .portp {
   position: absolute;
   display: inline-block;
-  top:135%;
-  margin-left: 24%;
-  width: 29%;
-  padding: 0%;
-  padding-top: 5%;
+  top:115vh;
+  margin-left: 24vw;
+  width: 29vw;
+  padding: 1vw;
 }
 
 .portp:hover {
 position: absolute;
 display: inline-block;
-top: 137%;
-margin-left: 23%;
-width: 31%;
-padding: 0%;
-padding-top: 4%;
+top: 115vh;
+margin-left: 23vw;
+width: 31vw;
+padding: 1vw;
 }
