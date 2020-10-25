@@ -5,6 +5,7 @@ body {
     background-size: auto;
     font-size: 18px;
     margin: 0px;
+    overflow: hidden;
 }
 
 .bg {
@@ -19,7 +20,7 @@ body {
 .gb {
   position: fixed;
   display: block;
-  top: 35vh;
+  top: 38vh;
   left: -20vw;
   width: 40%;
   transform: rotate(270deg)
@@ -50,7 +51,7 @@ body {
     position: fixed;
     display: inline-block;
     transform: rotate(90deg);
-    top: 46vh;
+    top: 48vh;
     left: 0vh;
     width: 33vh;
 }
@@ -59,7 +60,7 @@ body {
   position: fixed;
   display: inline-block;
   transform: rotate(90deg);
-  top: 46vh;
+  top: 48vh;
   left: 4vh;
   width: 33vh;
 }

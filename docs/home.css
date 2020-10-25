@@ -5,6 +5,7 @@ body {
     background-size: auto;
     font-size: 18px;
     margin: 0px;
+    overflow: hidden;
 }
 
 .bg {
@@ -21,9 +22,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  padding: 12%;
-  padding-bottom: 0;
+  width: 50%;
+  padding: 10%;
+  padding-bottom: 1%;
 }
 
   .header {
@@ -48,56 +49,57 @@ body {
 
 
   .bio {
-    position: absolute;
+
     display: inline-block;
-    top: 88vh;
-    margin-left: 26vw;
     width: 23vw;
-    padding: 1vw;
+
 }
 
 .bio:hover {
-  position: absolute;
+
   display: inline-block;
-  top: 88vh;
-  margin-left: 25vw;
   width: 25vw;
-  padding: 1vw;
 }
 
 
 .work {
-  position: absolute;
   display: inline-block;
-  top: 85vh;
-  margin-left: 50vw;
-  width: 27vw;
-  padding: 1vw;
+  padding: 10;
+  width: 23vw;
 }
 
 .work:hover {
-position: absolute;
 display: inline-block;
-top: 85vh;
-margin-left: 49vw;
-width: 29vw;
-padding: 1vw;
+width: 25vw;
 }
 
 .portp {
-  position: absolute;
+
   display: inline-block;
-  top:115vh;
-  margin-left: 24vw;
-  width: 29vw;
-  padding: 1vw;
+  width: 23vw;
 }
 
 .portp:hover {
-position: absolute;
 display: inline-block;
-top: 115vh;
-margin-left: 23vw;
-width: 31vw;
-padding: 1vw;
+width: 25vw;
 }
+
+.scrolling-wrapper {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: auto;
+  width: 64vw;
+  position: relative;
+  padding: 5;
+
+  
+}
+
+.card {
+  display: inline-block;
+}
+
+
+
