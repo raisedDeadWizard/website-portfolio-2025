@@ -22,7 +22,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 45vw;
   padding: 10%;
   padding-bottom: 1%;
 }
@@ -51,37 +51,37 @@ body {
   .bio {
 
     display: inline-block;
-    width: 23vw;
+    width: 15vw;
 
 }
 
 .bio:hover {
 
   display: inline-block;
-  width: 25vw;
+  width: 16vw;
 }
 
 
 .work {
   display: inline-block;
   padding: 10;
-  width: 23vw;
+  width: 15vw;
 }
 
 .work:hover {
 display: inline-block;
-width: 25vw;
+width: 16vw;
 }
 
 .portp {
 
   display: inline-block;
-  width: 23vw;
+  width: 15vw;
 }
 
 .portp:hover {
 display: inline-block;
-width: 25vw;
+width: 16vw;
 }
 
 .scrolling-wrapper {

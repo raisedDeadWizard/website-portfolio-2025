@@ -51,8 +51,8 @@ body {
     position: fixed;
     display: inline-block;
     transform: rotate(90deg);
-    top: 48vh;
-    left: 0vh;
+    top: 51vh;
+    left: 0vw;
     width: 33vh;
 }
 
@@ -60,7 +60,7 @@ body {
   position: fixed;
   display: inline-block;
   transform: rotate(90deg);
-  top: 48vh;
-  left: 4vh;
+  top: 51vh;
+  left: 2vw;
   width: 33vh;
 }
