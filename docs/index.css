@@ -1,6 +1,6 @@
 body {
     color: #000000;               /* Black */
-    background-image: url("./assets/1x/Background_1-80.jpg"); 
+    background-image: url("./assets/Background_1-80.jpg"); 
     background-size: 90%;
     background-origin: border-box;
     background-position-x: 5em;
