@@ -3,21 +3,19 @@
     <head>
         <meta charset='UTF-8'/>
         <title>Jagr Krtanjek - Launch Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel='stylesheet' href='index.css'/>
-
-        
     </head>
 
     <body>
-
-
         <img width="105%" class="menu" id="menu"> 
         <nav>
             <ul>
-                <li> <a href="#art">Art Projects &nbsp;</a></li>
-                <li> <a href="#prog">Code Projects</a></li>
-                <li> <a href="#work">Work Experience</a></li>
-                <li> <a href="#bio">Bio</a></li>
+                <li> <a href="javascript:scrollTo('#art')">Art Projects &nbsp;</a></li>
+                <li> <a href="javascript:scrollTo('#prog')">Code Projects</a></li>
+                <li> <a href="javascript:scrollTo('#work')">Work Experience</a></li>
+                <li> <a href="javascript:scrollTo('#bio')">Bio</a></li>
+                <li> <a href="javascript:scrollToTop()">Jagr Krtanjek</a></li>
             </ul>
         </nav>
   
@@ -38,6 +36,14 @@
         </div>
 
         <script> 
+
+            function scrollTo(section){
+                //console.log(section.toString());
+                jQuery('html,body').animate({scrollTop: jQuery(section).offset().top}, 1000);
+            }
+            function scrollToTop(){
+                jQuery('html,body').animate({scrollTop: 0}, 1000);
+            }
             window.onload = function() { 
                 document.getElementById("menu").src = "./assets/menu-bar.png";
                 var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
