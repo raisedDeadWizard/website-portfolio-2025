@@ -1,3 +1,8 @@
+@font-face {
+  font-family: invasion;
+  src: url(./assets/INVASION2000.TTF);
+}
+
 body {
     color: #000000;               /* Black */
     background-image: url("./assets/Background_1-80.jpg"); 
@@ -5,9 +10,62 @@ body {
     background-origin: border-box;
     background-position-x: 5em;
     font-size: 18px;
+    font-family: invasion;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 105vw;
+  display: flex;
+  margin-top: -5vh;
+  margin-left: -2.5vw;
+}
+
+
+
+nav ul {
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 40;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  padding-top: 0.6vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1.2vh;
+  text-align: center;
+  display: block;
+  font-size: 2.6vw;
+  color:rgba(255,255,255, 0.5);
+  text-decoration: none;
+  background: rgba(255,255,255, 0.0);
+  border-color: rgba(255,255,255, 0.1);
+  border-style: solid;
+}
+
+li a:hover {
+  color: white;
+  background: rgba(255,255,255, 0.3);
+  border-color:rgba(255,255,255, 0.3);
+  border-style: solid;
+  
 }
 
 .bg {
@@ -45,7 +103,7 @@ body {
 
 .prog {
 
-  top: 415%;
+  top: 405%;
   left: 16.75%;
   z-index: 10;
   width: 70vw;
@@ -53,7 +111,7 @@ body {
 
 .art {
 
-  top: 595%;
+  top: 585%;
   left: 16.75%;
   z-index: 15;
   width: 70vw;

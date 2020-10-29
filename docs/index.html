@@ -10,54 +10,97 @@
 
     <body>
 
-        
-        
+
+        <img width="105%" class="menu" id="menu"> 
+        <nav>
+            <ul>
+                <li> <a href="#art">Art Projects &nbsp;</a></li>
+                <li> <a href="#prog">Code Projects</a></li>
+                <li> <a href="#work">Work Experience</a></li>
+                <li> <a href="#bio">Bio</a></li>
+            </ul>
+        </nav>
+  
         <div class="bg">
-            <img src="./assets/Title.png" width="105%">
+            <img src="./assets/Title.png" width="105%" id="title">
             <div class="box bio">
-                <img src="./assets/Bio.png" width="70%" class="bio">
+                <img src="./assets/Bio.png" width="70%" class="bio" id="bio">
             </div>
             <div class="box work">
-                <img src="./assets/Work.png" width="70%" class="work">
+                <img src="./assets/Work.png" width="70%" class="work" id="work">
             </div>
             <div class="box prog">
-                <img src="./assets/Prog.png" width="70%" class="prog">
+                <img src="./assets/Prog.png" width="70%" class="prog" id="prog">
             </div>
             <div class="box art">
-                <img src="./assets/Art.png" width="70%" class="art">
+                <img src="./assets/Art.png" width="70%" class="art" id="art">
             </div>
         </div>
-        
-            
-            
-     
-            <!--      
-            <img src="./assets/home/gameboy.gif" class= "gb" >
 
+        <script> 
+            window.onload = function() { 
+                document.getElementById("menu").src = "./assets/menu-bar.png";
+                var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+                var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+                var menu = document.getElementById("menu");
+                var y;
+
+                window.onresize = function(){
+                    vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+                    vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+                    y = document.documentElement.scrollTop;
+                     // The following condition 
+                        // finds the next image 
+                        // index depending if we 
+                        // scroll up or scroll down 
+                        if (y > vh * 7.1 ) {
+                            menu.src = "./assets/menu-yellow.png";
+                        }
+                        else if (y > vh * 4.5  ){
+                            menu.src = "./assets/menu-blue.png";
+                        } 
+                        else if (y > vh * 2.25  ){
+                            menu.src = "./assets/menu-red.png";
+                        }
+                        else if (y > vh){
+                            menu.src = "./assets/menu-green.png";
+                        }
+                        else{
+                            menu.src = "./assets/menu-bar.png";
+                        }
+                }
+                window.onscroll = function(){
+
+                        y = document.documentElement.scrollTop;
+                        //console.log(document.getElementById("title").getBoundingClientRect().top);
+                        //console.log(document.getElementById("title").getBoundingClientRect().top);
+                        //console.log(vh + " " + vw);
+                        //console.log("top: " + document.getElementById("bio").style.top)
            
-
-            <div class="scrolling-wrapper">
-                <a href="#" onclick="location.href='bio.html'" >
-                    <img src="./assets/home/bio.png" class="bio" >
-                </a>
-                <a href="#" onclick="location.href='work.html'" >
-                    <img src="./assets/home/work.png" class="work" >
-                </a>
-                <a href="#" onclick="location.href='prog-port.html'" >
-                    <img src="./assets/home/progport.png" class="portp" >
-                </a>  
-            </div>
-            
-        -->
+                        // The following condition 
+                        // finds the next image 
+                        // index depending if we 
+                        // scroll up or scroll down 
+                        if (y > vh * 7.1 ) {
+                            menu.src = "./assets/menu-yellow.png";
+                        }
+                        else if (y > vh * 4.5  ){
+                            menu.src = "./assets/menu-blue.png";
+                        } 
+                        else if (y > vh * 2.25  ){
+                            menu.src = "./assets/menu-red.png";
+                        }
+                        else if (y > vh){
+                            menu.src = "./assets/menu-green.png";
+                        }
+                        else{
+                            menu.src = "./assets/menu-bar.png";
+                        }
            
-        
-
-        
-
-        
-        
-
-      
+                
+                }
+            }
+        </script>
         
     </body>
 </html>
