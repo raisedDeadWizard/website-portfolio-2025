@@ -46,10 +46,10 @@ li {
 }
 
 li a {
-  padding-top: 0.6vh;
+  padding-top: 0.5vh;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-bottom: 1.2vh;
+  padding-bottom: 1.3vh;
   text-align: center;
   display: block;
   font-size: 4vh;
