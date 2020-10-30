@@ -42,7 +42,7 @@ nav ul {
 }
 
 li {
-  float: right;
+  float: left;
 }
 
 li a {
@@ -78,10 +78,23 @@ li a:hover {
   z-index: -5;
 }
 
+
+
 .box {
   top: 0;
   position: absolute;
   display: flex;
+
+}
+
+.gb_text {
+  top: 20%;
+  left: 27.5%;
+  z-index: 40;
+  text-align: center;
+  width: 50vw;
+  color: white;
+  font-size: 6vh;
 
 }
 

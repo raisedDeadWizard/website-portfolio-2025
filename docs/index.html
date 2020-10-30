@@ -11,17 +11,23 @@
         <img width="105%" class="menu" id="menu"> 
         <nav>
             <ul>
-                <li> <a href="javascript:scrollTo('#art')">Art Projects &nbsp;</a></li>
-                <li> <a href="javascript:scrollTo('#prog')">Code Projects</a></li>
-                <li> <a href="javascript:scrollTo('#work')">Work Experience</a></li>
-                <li> <a href="javascript:scrollTo('#bio')">Bio</a></li>
                 <li> <a href="javascript:scrollToTop()">Jagr Krtanjek</a></li>
+                <li> <a href="javascript:scrollTo('#bio')">About</a></li>
+                <li> <a href="javascript:scrollTo('#work')">Work Experience</a></li>
+                <li> <a href="javascript:scrollTo('#prog')">Code Portfolio</a></li>
+                <li> <a href="javascript:scrollTo('#art')">Design Portfolio &nbsp;</a></li>
+                
                 
             </ul>
         </nav>
   
-        <div class="bg">
+        <div class="bg" id="bg">
             <img src="./assets/Title.png" width="105%" id="title">
+            
+            <div class="box gb_text" >
+                <h1 id="gb_text"> </h1>
+            </div>
+    
             <div class="box bio">
                 <img src="./assets/Bio.png" width="70%" class="bio" id="bio">
             </div>
@@ -37,6 +43,17 @@
         </div>
 
         <script> 
+            var i = 0;
+            var txt = 'Welcome to my website!'; /* The text */
+            var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("gb_text").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
 
             function scrollTo(section){
                 //console.log(section.toString());
@@ -46,6 +63,7 @@
                 jQuery('html,body').animate({scrollTop: 0}, 1000);
             }
             window.onload = function() { 
+                typeWriter();
                 document.getElementById("menu").src = "./assets/menu-bar.png";
                 var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
                 var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
