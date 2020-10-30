@@ -15,7 +15,7 @@
                 <li> <a href="javascript:scrollTo('#bio')">About</a></li>
                 <li> <a href="javascript:scrollTo('#work')">Work Experience</a></li>
                 <li> <a href="javascript:scrollTo('#prog')">Code Portfolio</a></li>
-                <li> <a href="javascript:scrollTo('#art')">Design Portfolio &nbsp;</a></li>
+                <li> <a href="javascript:scrollTo('#art')">Design Portfolio</a></li>
                 
                 
             </ul>
@@ -26,6 +26,10 @@
             
             <div class="box gb_text" >
                 <h1 id="gb_text"> </h1>
+            </div>
+
+            <div class="box gb_text_2" >
+                <p id="gb_text_2"> </p>
             </div>
     
             <div class="box bio">
@@ -44,7 +48,9 @@
 
         <script> 
             var i = 0;
+            var j = 0;
             var txt = 'Welcome to my website!'; /* The text */
+            var txt2 = 'Explore the sections below to learn more about me...'; /* The text */
             var speed = 100; /* The speed/duration of the effect in milliseconds */
 
             function typeWriter() {
@@ -52,6 +58,13 @@
                     document.getElementById("gb_text").innerHTML += txt.charAt(i);
                     i++;
                     setTimeout(typeWriter, speed);
+                }
+                else {
+                    if (j < txt2.length){
+                        document.getElementById("gb_text_2").innerHTML += txt2.charAt(j);
+                        j++;
+                        setTimeout(typeWriter, speed/2);
+                    }
                 }
             }
 
