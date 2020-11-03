@@ -88,25 +88,25 @@ li a:hover {
 }
 
 .gb_text {
-  top: 20%;
-  left: 27.5%;
+  top: 15vw;
+  left: 27.5vw;
   z-index: 40;
   text-align: center;
   width: 50vw;
   color: white;
-  font-size: 6vh;
+  font-size: 2.5vw;
 
 }
 
 
 .gb_text_2 {
-  top: 45%;
-  left: 32.5%;
+  top: 30vw;
+  left: 32.5vw;
   z-index: 40;
   text-align: center;
   width: 40vw;
   color: white;
-  font-size: 6vh;
+  font-size: 2.5vw;
 
 }
 
@@ -116,6 +116,37 @@ li a:hover {
     z-index: 0;
     width: 70vw;
 
+}
+
+.box .biotext{
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: white;
+  z-index: 5;
+  margin: auto;
+  left: 12.5%;
+  top: 40%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 57vw; /* Set the width of the positioned div */
+  float: left;
+}
+
+.inlineImg {
+  float: left;
+  width: 16vw;
+}
+
+.biotitle {
+  padding-left: 30%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.education {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .work {
