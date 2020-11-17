@@ -26,6 +26,22 @@ body {
   margin-left: -2.5vw;
 }
 
+
+.git {
+  position: fixed;
+  top: 0.5%;
+  left: 87.5%;
+  display: flex;
+}
+
+
+.linked {
+  position: fixed;
+  top: 0.5%;
+  left: 91.5%;
+  display: flex;
+}
+
 nav ul {
 
   position: fixed;
