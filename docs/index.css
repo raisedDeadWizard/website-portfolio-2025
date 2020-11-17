@@ -9,7 +9,7 @@ body {
     background-size: 90%;
     background-origin: border-box;
     background-position-x: 5em;
-    font-size: 2vw;
+    font-size: 1.9vw;
     font-family: invasion;
     margin: 0px;
     padding: 0px;
@@ -125,13 +125,46 @@ li a:hover {
   left: 12.5%;
   top: 40%; /* Adjust this value to move the positioned div up and down */
   text-align: left;
-  width: 57vw; /* Set the width of the positioned div */
+  width: 55vw; /* Set the width of the positioned div */
   float: left;
 }
+
+.box .worktext{
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: white;
+  z-index: 5;
+  margin: auto;
+  left: 12.5%;
+  top: 31.5%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 53vw; /* Set the width of the positioned div */
+  float: left;
+}
+
+.box .progtext{
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: white;
+  z-index: 11;
+  margin: auto;
+  left: 12.5%;
+  top: 31.5%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 53vw; /* Set the width of the positioned div */
+  float: left;
+}
+
 
 .inlineImg {
   float: left;
   width: 16vw;
+}
+
+.inlineImg:hover {
+  float: left;
+  width: 16vw;
+  border: 3px solid white;
 }
 
 .biotitle {
@@ -140,6 +173,32 @@ li a:hover {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.jobtitle {
+  padding-left: 31%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jobdate{
+  padding-left: 31%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5vw;
+}
+
+.jobdesc {
+  padding-left: 32%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1vw;
 }
 
 .education {
@@ -165,12 +224,153 @@ li a:hover {
 
 .art {
 
-  top: 585%;
-  left: 16.75%;
+  top: 90%;
+  left: 0%;
   z-index: 15;
   width: 70vw;
   padding-bottom: 10px;
 }
 
+.line-numbers {
+  width: 24vw;
+  height: 10.5vw;
+
+}
+
+.progdesc{
+  padding-left: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5vw;
+}
 
 
+
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+java+python */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+ code[class*="language-"],
+ pre[class*="language-"] {
+   color: #ccc;
+   background: none;
+   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+   font-size: 0.65em;
+   text-align: left;
+   white-space: pre;
+   word-spacing: normal;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 1;
+ 
+   -moz-tab-size: 4;
+   -o-tab-size: 4;
+   tab-size: 4;
+ 
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   -ms-hyphens: none;
+   hyphens: none;
+ 
+ }
+ 
+ /* Code blocks */
+ pre[class*="language-"] {
+   padding: 1em;
+   margin: .5em 0;
+   overflow: auto;
+ }
+ 
+ :not(pre) > code[class*="language-"],
+ pre[class*="language-"] {
+   background: #2d2d2d;
+ }
+ 
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+   padding: .1em;
+   border-radius: .3em;
+   white-space: normal;
+ }
+ 
+ .token.comment,
+ .token.block-comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+   color: #999;
+ }
+ 
+ .token.punctuation {
+   color: #ccc;
+ }
+ 
+ .token.tag,
+ .token.attr-name,
+ .token.namespace,
+ .token.deleted {
+   color: #e2777a;
+ }
+ 
+ .token.function-name {
+   color: #6196cc;
+ }
+ 
+ .token.boolean,
+ .token.number,
+ .token.function {
+   color: #f08d49;
+ }
+ 
+ .token.property,
+ .token.class-name,
+ .token.constant,
+ .token.symbol {
+   color: #f8c555;
+ }
+ 
+ .token.selector,
+ .token.important,
+ .token.atrule,
+ .token.keyword,
+ .token.builtin {
+   color: #cc99cd;
+ }
+ 
+ .token.string,
+ .token.char,
+ .token.attr-value,
+ .token.regex,
+ .token.variable {
+   color: #7ec699;
+ }
+ 
+ .token.operator,
+ .token.entity,
+ .token.url {
+   color: #67cdcc;
+ }
+ 
+ .token.important,
+ .token.bold {
+   font-weight: bold;
+ }
+ .token.italic {
+   font-style: italic;
+ }
+ 
+ .token.entity {
+   cursor: help;
+ }
+ 
+ .token.inserted {
+   color: green;
+ }
+ 
+ 
