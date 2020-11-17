@@ -155,6 +155,19 @@ li a:hover {
   float: left;
 }
 
+.box .arttext{
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  color: white;
+  z-index: 16;
+  margin: auto;
+  left: 12.5%;
+  top: 31.5%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 53vw; /* Set the width of the positioned div */
+  float: left;
+}
+
 
 .inlineImg {
   float: left;
